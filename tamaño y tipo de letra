@@ -1,0 +1,17 @@
+private void cb_tamañoActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        // TODO add your handling code here:
+        StyleConstants.setFontSize(estilo, Integer.parseInt(cb_tamaño.getSelectedItem().toString()));
+        doc.setCharacterAttributes(tp_texto.getSelectionStart(),
+                tp_texto.getSelectionEnd() - tp_texto.getSelectionStart(),
+                tp_texto.getStyle("miEstilo"),
+                true);
+                
+                
+                 private void cb_fontItemStateChanged(java.awt.event.ItemEvent evt) {                                         
+        // TODO add your handling code here:
+        StyleConstants.setFontFamily(estilo, cb_font.getSelectedItem().toString());
+        //StyleConstants.setFontSize(estilo, Integer.parseInt(cb_tamaño.getSelectedItem().toString()));
+        doc.setCharacterAttributes(tp_texto.getSelectionStart(),
+                tp_texto.getSelectionEnd() - tp_texto.getSelectionStart(),
+                tp_texto.getStyle("miEstilo"),
+                true);
